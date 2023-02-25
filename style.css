@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card, .card__thanks{
+    width: 350px;
+    height: fit-content;
+    background-color: var(--dark-blue);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+
+.card__icon{
+    width: 32px;
+    height: 32px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    background-color: hsl(211, 18%, 25%);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__icon i {
+    font-size: 14px;
+    display: block;
+    color: var(--orange);
+}
+
+
+
+.card__header{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.card__description{
+    color: var(--light-grey);
+    margin-bottom: 25px;
+}
+.list__scores{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+}
+.list__scores--item{
+    padding: 2px 0 0 0;
+    background-color: hsl(211, 18%, 25%);
+    color: var(--light-grey);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list__scores--item:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 500;
+}
+
+.card__btn{
+    
+    width: 100%;
+    padding: 12px 0 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 20px ;
+    text-align: center;
+    
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+.card__btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+
+
+input:checked + label {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+input[type="radio"] {
+    display: none;
+  }
+
+
+/* Card Thanks */
+
+.card__thanks {
+    min-height: 370px;
+    display: flex;;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__img {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card__score {
+    color: var(--orange);
+    background-color: #343F4B;
+    text-align: center;
+    width: fit-content;
+    padding: 6px 14px 4px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+
+/* .card__thanks {
+    display: none;
+} */
+
+.hidden {
+    display: none;
+}
