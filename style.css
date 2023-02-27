@@ -134,13 +134,18 @@ input[type="radio"] {
 
 /* Card Thanks */
 
+
+
 .card__thanks {
+    display: none;
     min-height: 370px;
-    display: flex;;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+
 
 .card__img {
     width: 100%;
@@ -160,9 +165,7 @@ input[type="radio"] {
 }
 
 
-/* .card__thanks {
-    display: none;
-} */
+
 
 .hidden {
     display: none;
